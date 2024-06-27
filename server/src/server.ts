@@ -1,9 +1,10 @@
-
-
-
 import { app} from "./app";
 
-app.listen(599, ()=>{
+import dotenv from "dotenv";
+
+dotenv.config();
+
+app.listen(process.env.PORT, ()=>{
     console.log("Serveris paleistas");
     
 })
